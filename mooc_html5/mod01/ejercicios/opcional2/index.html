@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Menú</title>
+    <style type="text/css">
+        ul {
+                display: flex;
+                align-items: stretch;
+                list-style: none;
+                margin:0;
+                padding:0;
+            }
+
+            li {
+                flex-grow: 1;
+                background-color: aquamarine;
+                margin-right: 0.5em;
+            }
+
+            a {
+                display: block;
+                height: 100%;
+                box-sizing: border-box;
+                padding: 1em;
+                text-align: center;
+                margin-right: 0.2em;
+                text-decoration: none;
+                color: #000000;
+            }
+
+            li:hover{
+                background-color: antiquewhite;
+            }
+        @media (orientation:landscape) {}
+            
+
+        @media (orientation:portrait) {
+            ul{ 
+                flex-direction: column;
+            }
+
+            li{
+                margin-bottom: 0.5em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h1>Discover </h1>
+        <ul>
+            <li><a href="#" class="welcome">Welcome</a></li>
+            <li><a href="#" class="featured">Featured</a></li>
+            <li><a href="#" class="people">People</a></li>
+            <li><a href="#" class="music">Music</a></li>
+            <li><a href="#" class="mixes">Mixes </a></li>
+            <li><a href="#" class="videos">Videos</a></li>
+            <li><a href="#" class="radio">Radio</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
